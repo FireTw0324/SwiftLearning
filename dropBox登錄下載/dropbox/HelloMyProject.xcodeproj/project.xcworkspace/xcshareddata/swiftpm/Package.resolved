@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
+          "version": "5.5.0"
+        }
+      },
+      {
+        "package": "KRActivityIndicatorView",
+        "repositoryURL": "https://github.com/krimpedance/KRActivityIndicatorView.git",
+        "state": {
+          "branch": null,
+          "revision": "bcb0e841d6de0cd343a32bd5056580a56d06c0bc",
+          "version": "3.0.7"
+        }
+      },
+      {
+        "package": "KRProgressHUD",
+        "repositoryURL": "https://github.com/krimpedance/KRProgressHUD",
+        "state": {
+          "branch": null,
+          "revision": "265142816d8f8ea93840accaf4ac7c49998e77c2",
+          "version": "3.4.7"
+        }
+      },
+      {
+        "package": "SwiftyDropbox",
+        "repositoryURL": "https://github.com/dropbox/SwiftyDropbox",
+        "state": {
+          "branch": null,
+          "revision": "7af87d903be1cf0af0e76e0394d992943055894e",
+          "version": "8.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

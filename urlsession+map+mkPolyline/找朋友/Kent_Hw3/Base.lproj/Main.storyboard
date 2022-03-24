@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find My FriendVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="findMyFriendVC" customModule="Kent_Hw3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lJ-E8-2GP">
+                                <rect key="frame" x="0.0" y="32" width="69.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="update" titleAlignment="automatic"/>
+                                <connections>
+                                    <action selector="uploadLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TSP-V3-l8v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ED7-kh-V4g">
+                                <rect key="frame" x="324" y="32" width="90" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="findFriend" titleAlignment="automatic"/>
+                                <connections>
+                                    <action selector="get:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGj-Op-QLF"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ETU-6j-d9D">
+                                <rect key="frame" x="0.0" y="133" width="414" height="729"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ETU-6j-d9D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="19L-gb-hvH"/>
+                            <constraint firstItem="ETU-6j-d9D" firstAttribute="top" secondItem="0lJ-E8-2GP" secondAttribute="bottom" constant="70" id="9pc-q4-DvG"/>
+                            <constraint firstItem="0lJ-E8-2GP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="E2F-gv-nxg"/>
+                            <constraint firstItem="ED7-kh-V4g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nlb-Fi-Ww9"/>
+                            <constraint firstItem="0lJ-E8-2GP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aL1-cS-gor"/>
+                            <constraint firstItem="ED7-kh-V4g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="eiM-An-oJe"/>
+                            <constraint firstItem="ETU-6j-d9D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qMf-i5-KeS"/>
+                            <constraint firstItem="ETU-6j-d9D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wtl-AG-L23"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainMapView" destination="ETU-6j-d9D" id="d2j-1E-XU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
